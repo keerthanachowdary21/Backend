@@ -34,12 +34,12 @@ npm install axios cheerio async
 ```
 ---
 
-# Dependencies
+## Dependencies
 1. **axios**: For making HTTP requests.
 2. **cheerio**: For HTML parsing and DOM traversal.
 3. **async**: For managing asynchronous operations.
 
-# Output Format
+## Output Format
 The output is a JSON file (productUrls.json) mapping each domain to its discovered product URLs. Example:
 
 ```
