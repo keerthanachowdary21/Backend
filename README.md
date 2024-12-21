@@ -29,8 +29,11 @@ This project implements a web crawler designed to discover and list product URLs
 
 Install the required dependencies:
 
-```bash
+```
 npm install axios cheerio async
+
+```
+---
 
 # Dependencies
 1. **axios**: For making HTTP requests.
