@@ -1,6 +1,6 @@
 # Crawler for Discovering Product URLs on E-commerce Websites
 
-This project implements a web crawler designed to discover and list product URLs across multiple e-commerce domains. The crawler intelligently identifies product pages using predefined URL patterns and outputs a structured list of product URLs for each domain.
+This project implements a web crawler to discover and list product URLs across multiple e-commerce domains. The crawler intelligently identifies product pages using predefined URL patterns and outputs a structured list of product URLs for each domain.
 
 ---
 
@@ -10,7 +10,7 @@ This project implements a web crawler designed to discover and list product URLs
    - Identifies product pages by scanning URLs containing specific patterns like `/product/`, `/item/`, `/p/`.
    
 2. **Scalability**:
-   - Handles multiple domains, deep website hierarchies, and a large number of pages.
+   - Handles multiple domains, deep website hierarchies, and many pages.
 
 3. **Performance**:
    - Efficiently fetches and parses HTML using asynchronous operations.
@@ -31,7 +31,6 @@ Install the required dependencies:
 
 ```
 npm install axios cheerio async
-
 ```
 ---
 
@@ -43,8 +42,7 @@ npm install axios cheerio async
 # Output Format
 The output is a JSON file (productUrls.json) mapping each domain to its discovered product URLs. Example:
 
-json
-```bash
+```
 {
   "https://example1.com": [
     "https://example1.com/product/12345",
@@ -55,6 +53,7 @@ json
     "https://example2.com/product/22222"
   ]
 }
+```
 
 ## Assumptions and Approach
 # URL Patterns:
