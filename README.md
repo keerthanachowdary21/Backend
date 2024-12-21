@@ -56,15 +56,14 @@ The output is a JSON file (productUrls.json) mapping each domain to its discover
 ```
 
 ## Assumptions and Approach
-# URL Patterns:
-
+**URL Patterns**:
 - Product pages are identified by predefined patterns (/product/, /item/, /p/).
 The patterns can be customized in the utils.js file.
-Scalability:
 
+**Scalability**:
 - The solution is designed to handle multiple domains, even with large and complex websites.
 Parallel processing of domains ensures that the crawler works efficiently.
-Error Handling:
 
+**Error Handling**:
 - The crawler skips problematic URLs and continues processing others without crashing.
 Errors during fetching or parsing are logged.
