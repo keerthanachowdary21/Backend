@@ -1,6 +1,6 @@
 # Crawler for Discovering Product URLs on E-commerce Websites
 
-This project implements a web crawler designed to discover and list product URLs across multiple e-commerce domains. The crawler intelligently identifies product pages using predefined URL patterns and outputs a structured list of product URLs for each domain.
+This project implements a web crawler to discover and list product URLs across multiple e-commerce domains. The crawler intelligently identifies product pages using predefined URL patterns and outputs a structured list of product URLs for each domain.
 
 ---
 
@@ -10,7 +10,7 @@ This project implements a web crawler designed to discover and list product URLs
    - Identifies product pages by scanning URLs containing specific patterns like `/product/`, `/item/`, `/p/`.
    
 2. **Scalability**:
-   - Handles multiple domains, deep website hierarchies, and a large number of pages.
+   - Handles multiple domains, deep website hierarchies, and many pages.
 
 3. **Performance**:
    - Efficiently fetches and parses HTML using asynchronous operations.
@@ -29,19 +29,20 @@ This project implements a web crawler designed to discover and list product URLs
 
 Install the required dependencies:
 
-```bash
+```
 npm install axios cheerio async
+```
+---
 
-# Dependencies
+## Dependencies
 1. **axios**: For making HTTP requests.
 2. **cheerio**: For HTML parsing and DOM traversal.
 3. **async**: For managing asynchronous operations.
 
-# Output Format
+## Output Format
 The output is a JSON file (productUrls.json) mapping each domain to its discovered product URLs. Example:
 
-json
-```bash
+```
 {
   "https://example1.com": [
     "https://example1.com/product/12345",
@@ -52,17 +53,17 @@ json
     "https://example2.com/product/22222"
   ]
 }
+```
 
 ## Assumptions and Approach
-# URL Patterns:
-
+**URL Patterns**:
 - Product pages are identified by predefined patterns (/product/, /item/, /p/).
 The patterns can be customized in the utils.js file.
-Scalability:
 
+**Scalability**:
 - The solution is designed to handle multiple domains, even with large and complex websites.
 Parallel processing of domains ensures that the crawler works efficiently.
-Error Handling:
 
+**Error Handling**:
 - The crawler skips problematic URLs and continues processing others without crashing.
 Errors during fetching or parsing are logged.
